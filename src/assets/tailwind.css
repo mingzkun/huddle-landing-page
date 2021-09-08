@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body{
+    @apply bg-violet min-w-0 sm:min-w-full xl:min-w-0 min-h-0 max-h-full text-white
+}
+
+#app{
+    @apply m-8 xl:mx-16 xl:mt-16 xl:mb-8 flex flex-col justify-between
+}
+
+button{
+    @apply rounded-full h-10 w-48 xl:h-14 bg-white text-violet font-normal text-sm xl:text-base shadow-xl
+}
+
+button:hover{
+    @apply xl:bg-soft-magenta xl:text-white
+}
+
+.social-button{
+    @apply w-8 h-8 xl:w-10 xl:h-10 p-2 border border-white rounded-full
+}

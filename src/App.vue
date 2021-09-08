@@ -1,26 +1,38 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Nav/>
+  <Content/>
+  <Social/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Nav from './components/NavBar.vue'
+import Content from './components/Content.vue'
+import Social from './components/Social.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Nav,
+    Content,
+    Social,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@media (min-width: 375px) {
+    body {
+      background: url("./assets/bg-mobile.svg");
+      background-position: top left;
+      background-repeat: no-repeat, no-repeat;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    body {
+      background: url("./assets/bg-desktop.svg");
+      background-position: top left;
+      background-repeat: no-repeat, no-repeat;
+    }
+  }
 </style>
